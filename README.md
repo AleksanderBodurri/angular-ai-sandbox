@@ -1,20 +1,5 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+My personal sandbox template for building reusable utility components with LLMs and Angular. This template is meant to give the LLM some structure to create the components so that they are easy to extract from the sandbox and use in other places.
 
-# Run and deploy your AI Studio app
+# Angular AI Sandbox
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/drive/1pQtqxJ16vjM35KO8CLGlNiPVi59d32dM
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Template Angular application for building utility components with google ai studio. Simply load the application into https://aistudio.google.com/apps and then ask gemini to build whatever Angular component you like. The component will render in the sandbox in an isolated way that you can then iterate on. When you're done, fin your new component in src/components/ui and export it to your own personal Angular Apps
