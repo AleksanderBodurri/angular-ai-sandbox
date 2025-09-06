@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.showcase-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.group-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6b7280; /* gray-500 */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb; /* gray-200 */
+}
+
+.showcase-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.item span {
+  font-size: 0.875rem;
+  color: #4b5563; /* gray-600 */
+  font-weight: 500;
+}

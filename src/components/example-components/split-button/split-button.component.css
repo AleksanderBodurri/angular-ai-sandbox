@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.example-wrapper {
+  /* This container can be used for alignment if needed */
+}
+
+.last-action-display {
+  background-color: #f3f4f6; /* gray-100 */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #4b5563; /* gray-600 */
+  border: 1px solid #d1d5db; /* gray-300 */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.last-action-display strong {
+  color: #1f2937; /* gray-800 */
+}

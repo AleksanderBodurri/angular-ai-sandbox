@@ -1,0 +1,66 @@
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.alert-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-title {
+  font-weight: 700;
+}
+
+.alert-message {
+  margin-left: 0.25rem;
+}
+
+/* Variants */
+.alert-info {
+  background-color: #dbeafe; /* blue-100 */
+  border-color: #93c5fd; /* blue-300 */
+  color: #1e40af; /* blue-800 */
+}
+.alert-info .alert-icon {
+  color: #3b82f6; /* blue-500 */
+}
+
+.alert-success {
+  background-color: #dcfce7; /* green-100 */
+  border-color: #86efac; /* green-300 */
+  color: #14532d; /* green-900 */
+}
+.alert-success .alert-icon {
+  color: #22c55e; /* green-500 */
+}
+
+.alert-warning {
+  background-color: #fef9c3; /* yellow-100 */
+  border-color: #fcd34d; /* yellow-300 */
+  color: #854d0e; /* yellow-800 */
+}
+.alert-warning .alert-icon {
+  color: #eab308; /* yellow-500 */
+}
+
+.alert-error {
+  background-color: #fee2e2; /* red-100 */
+  border-color: #fca5a5; /* red-300 */
+  color: #991b1b; /* red-900 */
+}
+.alert-error .alert-icon {
+  color: #ef4444; /* red-500 */
+}

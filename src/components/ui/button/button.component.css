@@ -1,0 +1,74 @@
+:host {
+  --focus-ring-color: #3b82f6; /* default blue-500 */
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  outline: none;
+  transition: background-color 150ms;
+  border: none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:focus-visible {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--focus-ring-color);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2563eb;
+  --focus-ring-color: #3b82f6;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  color: #1f2937;
+  background-color: #e5e7eb; /* gray-200 */
+  --focus-ring-color: #9ca3af;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: #d1d5db; /* gray-300 */
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc2626;
+  --focus-ring-color: #ef4444;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+.btn-success {
+  color: #fff;
+  background-color: #16a34a;
+  --focus-ring-color: #22c55e;
+}
+
+.btn-success:hover:not(:disabled) {
+  background-color: #15803d;
+}
+
+.btn-purple {
+  color: #fff;
+  background-color: #9333ea;
+  --focus-ring-color: #a855f7;
+}
+
+.btn-purple:hover:not(:disabled) {
+  background-color: #7e22ce;
+}

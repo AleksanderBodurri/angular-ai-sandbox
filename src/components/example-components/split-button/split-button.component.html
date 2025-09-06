@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="example-wrapper">
+    <app-split-button
+      [primaryAction]="primaryAction"
+      [secondaryActions]="secondaryActions"
+      (actionSelected)="onAction($event)"
+    >
+    </app-split-button>
+  </div>
+  @if (lastAction()) {
+    <p class="last-action-display">Last action: <strong>{{ lastAction() }}</strong></p>
+  } @else {
+    <p class="last-action-display">Click an action to see the result here.</p>
+  }
+</div>

@@ -1,0 +1,5 @@
+{
+  "name": "Angular AI Sandbox",
+  "description": "A sandbox environment for developing and showcasing Angular components in isolation. This provides a clean interface to view components, making it easier to build and test them individually. Intended for use in google aistudio to generate reusable components that can then be exported into other Angular Apps",
+  "requestFramePermissions": []
+}

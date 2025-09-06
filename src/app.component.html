@@ -1,0 +1,27 @@
+<div class="app-container">
+  <app-sidebar 
+    [selectedComponentName]="selectedComponentName()" 
+    (componentSelected)="onComponentSelected($event)">
+  </app-sidebar>
+
+  <main class="main-content">
+    @if (selectedComponent()) {
+      <div class="sandbox-container">
+        <header class="sandbox-header">
+          <h1>{{ selectedComponentName() }}</h1>
+          <p>Displaying the selected component in isolation.</p>
+        </header>
+        <div class="sandbox-view-wrapper">
+          <app-sandbox-view [component]="selectedComponent()"></app-sandbox-view>
+        </div>
+      </div>
+    } @else {
+      <div class="welcome-message">
+        <div class="welcome-content">
+          <h1>Welcome to the Sandbox</h1>
+          <p>Select a component from the sidebar to begin.</p>
+        </div>
+      </div>
+    }
+  </main>
+</div>

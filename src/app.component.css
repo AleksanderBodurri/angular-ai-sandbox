@@ -1,0 +1,69 @@
+:host {
+  display: block;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 3rem;
+  overflow-y: auto;
+  background-color: #f9fafb; /* gray-50 */
+}
+
+.sandbox-container {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.sandbox-header {
+  margin-bottom: 2rem;
+}
+
+.sandbox-header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #111827; /* gray-900 */
+  margin: 0;
+}
+
+.sandbox-header p {
+  font-size: 1.125rem;
+  color: #6b7280; /* gray-500 */
+  margin-top: 0.5rem;
+}
+
+.sandbox-view-wrapper {
+  background-color: #ffffff; /* white */
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border: 1px solid #e5e7eb; /* gray-200 */
+}
+
+.welcome-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.welcome-content {
+  text-align: center;
+}
+
+.welcome-content h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827; /* gray-900 */
+  margin: 0;
+}
+
+.welcome-content p {
+  margin-top: 0.5rem;
+  color: #6b7280; /* gray-500 */
+}

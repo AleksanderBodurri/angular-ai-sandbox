@@ -1,0 +1,30 @@
+<div class="card">
+  <img
+    class="card-image"
+    [ngSrc]="imageUrl()"
+    width="400"
+    height="200"
+    [alt]="title()"
+    priority
+  />
+  <div class="card-content">
+    @if (category()) {
+      <div class="card-category">
+        {{ category() }}
+      </div>
+    }
+    <a href="#" class="card-title">{{ title() }}</a>
+    @if (description()) {
+      <p class="card-description">
+        {{ description() }}
+      </p>
+    }
+  </div>
+  @if (buttonText()) {
+    <div class="card-footer">
+      <button class="card-button">
+        {{ buttonText() }}
+      </button>
+    </div>
+  }
+</div>

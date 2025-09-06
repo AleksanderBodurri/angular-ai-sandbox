@@ -1,0 +1,9 @@
+<div class="alert" [class]="'alert-' + variant()" role="alert">
+  <svg class="alert-icon" fill="currentColor" viewBox="0 0 20 20">
+    <path fill-rule="evenodd" [attr.d]="iconPath()" clip-rule="evenodd"></path>
+  </svg>
+  <div class="alert-content">
+    <span class="alert-title">{{ title() }}:</span>
+    <span class="alert-message">{{ message() }}</span>
+  </div>
+</div>

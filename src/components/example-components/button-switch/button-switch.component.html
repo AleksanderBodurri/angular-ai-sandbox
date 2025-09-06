@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="showcase-group">
+    <h3 class="group-title">Billing Cycle</h3>
+    <p class="group-description">Choose between monthly and annual billing.</p>
+    <div class="example-wrapper">
+      <app-button-switch
+        [options]="billingOptions"
+        [value]="billingCycle()"
+        (valueChange)="billingCycle.set($event)"
+      >
+      </app-button-switch>
+    </div>
+    <div class="result-display">
+      Selected: <strong>{{ billingCycle() }}</strong>
+    </div>
+  </div>
+
+  <div class="showcase-group">
+    <h3 class="group-title">Notification Preferences</h3>
+    <p class="group-description">Select how you want to receive notifications.</p>
+    <div class="example-wrapper">
+      <app-button-switch
+        [options]="notificationOptions"
+        [value]="notificationPreference()"
+        (valueChange)="notificationPreference.set($event)"
+      >
+      </app-button-switch>
+    </div>
+    <div class="result-display">
+      Selected: <strong>{{ notificationPreference() }}</strong>
+    </div>
+  </div>
+</div>

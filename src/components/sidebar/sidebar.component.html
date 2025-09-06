@@ -1,0 +1,22 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <h2>
+      <span class="brand-accent">Angular</span> <br> AI Sandbox
+    </h2>
+  </div>
+  <nav class="sidebar-nav">
+    @for (name of componentNames; track name) {
+      <a 
+        href="#" 
+        (click)="$event.preventDefault(); selectComponent(name)"
+        class="nav-item"
+        [class.selected]="selectedComponentName() === name"
+      >
+        {{ name }}
+      </a>
+    }
+  </nav>
+  <div class="sidebar-footer">
+    <p>Component Sandbox v1.0</p>
+  </div>
+</aside>
